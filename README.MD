@@ -12,4 +12,4 @@ This repo contains code for a demo of CoreML integration into an iOS Project. In
 3. To best experience how this app works, I would recommend running the app on an actual iPhone rather than the iOS Simulator. The reason is because both of these CoreML models take in images as input, and the code allows for users to input images either through camera or through the photo library. The simulator cannot use the camera, and the images available in the default simulator photo library are probably insufficient to properly see how these models work and react to various inputs. For that reason, please try to run the app on an actual iPhone.
 
 ## Demo
-![](demo.gif)
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" />
