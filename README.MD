@@ -9,3 +9,7 @@ This repo contains code for a demo of CoreML integration into an iOS Project. In
    2. After downloading the model file (extension is .mlmodel), open the project on Xcode, and drag the model file into the CoreMLWorkshop folder.
    3. Build Xcode project to make sure there are no errors.
 2. The code is currently setup to use 1 of 2 possible models, the SqueezeNet object detection model or the CNNEmotions emotion detection model. In ViewController.swift, you will find a variable called "model" and two possible assignments, one of which will be commented out, and the other one not commented (indicating this is the model in use currently). To switch which model is in use, just switch which model assignment is commented out.
+3. To best experience how this app works, I would recommend running the app on an actual iPhone rather than the iOS Simulator. The reason is because both of these CoreML models take in images as input, and the code allows for users to input images either through camera or through the photo library. The simulator cannot use the camera, and the images available in the default simulator photo library are probably insufficient to properly see how these models work and react to various inputs. For that reason, please try to run the app on an actual iPhone.
+
+## Demo
+![](demo.gif)

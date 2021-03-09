@@ -15,8 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     @IBOutlet weak var descriptionLabel: UILabel!
     
     // To switch models, switch which of the two lines below are commented out.
-    var model = CNNEmotions()
-    // var model = SqueezeNetInt8LUT()
+    // var model = CNNEmotions()
+    var model = SqueezeNetInt8LUT()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +89,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
                 }
                 
                 // setup the label to display the model's "first result" prediction with highest confidence
-                self.descriptionLabel.text = "(Value: \(firstObject.identifier), Confidence: \(firstObject.confidence))"
+                self.descriptionLabel.text = "(Value: \(firstObject.identifier)\n Confidence: \(firstObject.confidence))"
             }
             
             
