@@ -10,7 +10,7 @@ import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
-    // Outlets for the image and label showing ML Model's output
+    // Outlets for the image and label showing ML Model's output 
     @IBOutlet weak var chosenImage: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
